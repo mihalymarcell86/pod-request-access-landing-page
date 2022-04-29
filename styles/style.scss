@@ -3,3 +3,101 @@
 @use "variables" as *;
 
 @include setup;
+
+body {
+  background-color: color(eerie-black);
+  position: relative;
+  padding: 62px 24px 94px;
+}
+
+.pod-logo {
+  display: block;
+  margin-inline: auto;
+  margin-bottom: 57px;
+}
+
+.content__host-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.content__heading {
+  @include setFont(rem(26px), 38, 400);
+  color: color(medium-aquamarine);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: em(16px, 26px);
+}
+
+.heading__emphasis {
+  font-style: normal;
+  color: color(white);
+}
+
+.content__paragraph {
+  @include setFont(rem(15px), 25, 400);
+  color: color(periwinkle);
+  text-align: center;
+  margin-bottom: em(33px, 15px);
+}
+
+.content__partner-logos {
+  margin-inline: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: rem(48px);
+}
+
+.partner-logos__spotify {
+  width: 56px;
+  height: 17px;
+}
+
+.partner-logos__apple {
+  width: 45px;
+  height: 17px;
+}
+
+.partner-logos__google {
+  width: 73px;
+  height: 11px;
+}
+
+.partner-logos__pocket {
+  width: 77px;
+  height: 15px;
+}
+
+.form__input {
+  @include setFont(rem(14px), 28, 400);
+  display: block;
+  width: 100%;
+  padding: em(9px, 14px) em(32px, 14px);
+  border: 0;
+  border-radius: 28px;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.input--email-field {
+  background-color: color(japanese-indigo);
+  color: hsla(0, 0%, 100%, 0.5);
+  margin-bottom: em(16px, 14px);
+}
+
+.input--submit-button {
+  text-align: center;
+  background-color: color(medium-aquamarine);
+  color: color(eerie-black);
+  box-shadow: 0px 25px 20px -20px hsla(157, 74%, 62%, 0.498);
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    background: hsl(157, 100%, 85%);
+    box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.2);
+  }
+}

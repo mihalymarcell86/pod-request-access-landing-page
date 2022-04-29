@@ -12,6 +12,111 @@
 
 body {
   font-family: "Chivo", sans-serif;
+  height: 100vh;
+}
+
+body {
+  background-color: hsl(224deg, 35%, 11%);
+  position: relative;
+  padding: 62px 24px 94px;
+}
+
+.pod-logo {
+  display: block;
+  margin-inline: auto;
+  margin-bottom: 57px;
+}
+
+.content__host-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.content__heading {
+  font-size: 1.4444444444rem;
+  line-height: 1.4615384615;
+  font-weight: 400;
+  color: hsl(157deg, 74%, 62%);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0.6153846154em;
+}
+
+.heading__emphasis {
+  font-style: normal;
+  color: hsl(0deg, 0%, 100%);
+}
+
+.content__paragraph {
+  font-size: 0.8333333333rem;
+  line-height: 1.6666666667;
+  font-weight: 400;
+  color: hsl(225deg, 40%, 83%);
+  text-align: center;
+  margin-bottom: 2.2em;
+}
+
+.content__partner-logos {
+  margin-inline: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.6666666667rem;
+}
+
+.partner-logos__spotify {
+  width: 56px;
+  height: 17px;
+}
+
+.partner-logos__apple {
+  width: 45px;
+  height: 17px;
+}
+
+.partner-logos__google {
+  width: 73px;
+  height: 11px;
+}
+
+.partner-logos__pocket {
+  width: 77px;
+  height: 15px;
+}
+
+.form__input {
+  font-size: 0.7777777778rem;
+  line-height: 2;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  padding: 0.6428571429em 2.2857142857em;
+  border: 0;
+  border-radius: 28px;
+}
+.form__input:focus {
+  outline: 0;
+}
+
+.input--email-field {
+  background-color: hsl(225deg, 26%, 23%);
+  color: hsla(0deg, 0%, 100%, 0.5);
+  margin-bottom: 1.1428571429em;
+}
+
+.input--submit-button {
+  text-align: center;
+  background-color: hsl(157deg, 74%, 62%);
+  color: hsl(224deg, 35%, 11%);
+  box-shadow: 0px 25px 20px -20px hsla(157deg, 74%, 62%, 0.498);
+  transition: all 0.1s ease-in-out;
+}
+.input--submit-button:hover {
+  background: hsl(157deg, 100%, 85%);
+  box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */
