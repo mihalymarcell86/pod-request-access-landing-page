@@ -1,0 +1,14 @@
+@use "sass:math";
+
+$REM: 18;
+$font: "Chivo", sans-serif;
+$breakpoint: undefined;
+
+$colors: (
+  medium-aquamarine: hsl(157, 74%, 62%),
+  japanese-indigo: hsl(225, 26%, 23%),
+  eerie-black: hsl(224, 35%, 11%),
+  white: hsl(0, 0%, 100%),
+  UCLA-blue: hsl(225, 21%, 45%),
+  periwinkle: hsl(225, 40%, 83%),
+);

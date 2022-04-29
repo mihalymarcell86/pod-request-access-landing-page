@@ -1,0 +1,17 @@
+:root {
+  font-size: 1.125em;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Chivo", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
