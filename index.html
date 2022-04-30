@@ -24,13 +24,17 @@
       <img src="assets/desktop/logo.svg" alt="Pod logo" class="pod-logo"/>
     </header>
     <main class="content">
-      <img src="assets/mobile/image-host.jpg" class="content__host-image" alt="">
+      <picture>
+        <source media="(max-width:769px)" srcset="assets/mobile/image-host.jpg">
+      <img src="assets/desktop/image-host.jpg" class="content__host-image" alt="">
+    </picture>
       <h1 class="content__heading">Publish your podcasts <em class="heading__emphasis">everywhere.</em></h1>
       <p class="content__paragraph">
         Upload your audio to Pod with a single click. We’ll then distribute your
         podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and
         more!
       </p>
+      <div class="content__bottom-section">
       <div class="content__partner-logos">
         <img src="assets/desktop/spotify.svg" alt="Spotify logo" class="partner-logos__spotify">
         <img src="assets/desktop/apple-podcast.svg" alt="Apple Podcast logo" class="partner-logos__apple">
@@ -41,6 +45,8 @@
         <input type="email" placeholder="Email address" class="form__input input--email-field" required>
       <input type="submit" value="Request access" class="form__input input--submit-button"></input>
     </form>
+  </div>
+  <img src="assets/desktop/bg-pattern-dots.svg" class="dots" alt="">
     </main>
   </body>
 </html>
