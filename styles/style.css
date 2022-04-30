@@ -20,9 +20,19 @@ body {
   position: relative;
   padding: 62px 24px 24px;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   body {
     padding: 50px 0 0 39px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    padding: calc(0.2166666667 * 100vw + -210px) 0 0 calc(0.525 * 100vw + -591px);
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    padding: 102px 0 0 165px;
   }
 }
 
@@ -31,10 +41,20 @@ body {
   margin-inline: auto;
   margin-bottom: 57px;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .pod-logo {
     margin-inline: 0;
     margin-bottom: 152px;
+  }
+}
+@media (min-width: 1200px) {
+  .pod-logo {
+    margin-bottom: calc(-0.2041666667 * 100vw + 397px);
+  }
+}
+@media (min-width: 1440px) {
+  .pod-logo {
+    margin-bottom: 103px;
   }
 }
 
@@ -45,19 +65,32 @@ body {
   z-index: -1;
   opacity: 0.1;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .content__host-image {
     opacity: 1;
     width: 491px;
     height: 767px;
   }
 }
+@media (min-width: 1200px) {
+  .content__host-image {
+    top: 130px;
+    width: 888px;
+    height: 640px;
+  }
+}
 
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .content {
     background-color: hsl(224deg, 35%, 11%);
     padding-top: 93px;
     max-width: 635px;
+  }
+}
+@media (min-width: 1200px) {
+  .content {
+    padding-top: 88px;
+    max-width: 723px;
   }
 }
 
@@ -70,12 +103,20 @@ body {
   text-align: center;
   margin-bottom: 0.6153846154em;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .content__heading {
     font-size: 2.6666666667rem;
     line-height: 1.1666666667;
     text-align: left;
     margin-bottom: 0.6458333333em;
+  }
+}
+@media (min-width: 1200px) {
+  .content__heading {
+    font-size: 2.8888888889rem;
+    line-height: 1.1923076923;
+    font-weight: 400;
+    margin-bottom: 0.4615384615em;
   }
 }
 
@@ -90,19 +131,22 @@ body {
   font-weight: 400;
   color: hsl(225deg, 40%, 83%);
   text-align: center;
+  max-width: 450px;
+  margin-inline: auto;
   margin-bottom: 2.2em;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .content__paragraph {
     font-size: 1rem;
     line-height: 1.5555555556;
     text-align: left;
+    max-width: 445px;
     margin-bottom: 2.2222222222em;
-    margin-right: 190px;
+    margin-left: 0;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .content__bottom-section {
     display: flex;
     flex-direction: column-reverse;
@@ -119,7 +163,7 @@ body {
   align-items: center;
   margin-bottom: 2.6666666667rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .content__partner-logos {
     margin: 0 99px 1px 0;
     max-width: 536px;
@@ -130,7 +174,7 @@ body {
   width: 3.1111111111rem;
   height: 0.9444444444rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .partner-logos__spotify {
     width: 5.3333333333rem;
     height: 1.6111111111rem;
@@ -141,7 +185,7 @@ body {
   width: 2.5rem;
   height: 0.9444444444rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .partner-logos__apple {
     width: 4.3333333333rem;
     height: 1.6111111111rem;
@@ -152,7 +196,7 @@ body {
   width: 4.0555555556rem;
   height: 0.6111111111rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .partner-logos__google {
     width: 6.9444444444rem;
     height: 1rem;
@@ -163,14 +207,17 @@ body {
   width: 4.2777777778rem;
   height: 0.8333333333rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .partner-logos__pocket {
     width: 7.1666666667rem;
     height: 1.4444444444rem;
   }
 }
 
-@media (min-width: 768px) {
+.content__form {
+  position: relative;
+}
+@media (min-width: 700px) {
   .content__form {
     background-color: hsl(225deg, 26%, 23%);
     border: 5px solid hsl(225deg, 26%, 23%);
@@ -187,7 +234,6 @@ body {
   font-weight: 400;
   display: block;
   width: 100%;
-  max-width: 450px;
   margin-inline: auto;
   padding: 0.6428571429em 2.2857142857em;
   border: 0;
@@ -196,7 +242,7 @@ body {
 .form__input:focus {
   outline: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .form__input {
     max-width: none;
   }
@@ -210,7 +256,7 @@ body {
 .input--email-field:placeholder-shown {
   color: hsla(0deg, 0%, 100%, 0.5);
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .input--email-field {
     max-width: 18.2142857143em;
     display: inline-block;
@@ -231,18 +277,49 @@ body {
   background-color: hsl(157deg, 100%, 85%);
   box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.2);
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .input--submit-button {
+    position: absolute;
+    right: 0;
     display: inline-block;
     max-width: 11.5714285714em;
   }
 }
 
 .dots {
+  display: none;
   position: absolute;
   bottom: 0;
   left: 30px;
   z-index: -1;
+}
+@media (min-width: 700px) {
+  .dots {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .dots {
+    left: auto;
+    right: 0;
+    bottom: 78px;
+  }
+}
+
+.form__error {
+  font-size: 0.6666666667rem;
+  line-height: 1.19;
+  color: hsl(0deg, 96%, 61%);
+  position: absolute;
+  top: 2.6111111111rem;
+  left: 1.7777777778rem;
+}
+@media (min-width: 700px) {
+  .form__error {
+    position: absolute;
+    top: auto;
+    bottom: -1.3888888889rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
