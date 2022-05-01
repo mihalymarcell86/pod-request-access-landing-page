@@ -9,14 +9,12 @@ form.addEventListener("submit", (event) => {
   email.setCustomValidity("");
   if (email.checkValidity()) {
     email.value = "";
+  } else {
+    errorDiv.innerHTML = `Oops! Please ${
+      email.value == "" ? "add" : "check"
+    } your email.`;
+    errorDiv.hidden = false;
   }
-});
-
-email.addEventListener("invalid", (event) => {
-  errorDiv.innerHTML = `Oops! Please ${
-    event.target.value == "" ? "add" : "check"
-  } your email.`;
-  errorDiv.hidden = false;
 });
 
 email.addEventListener("keydown", () => {
